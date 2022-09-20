@@ -359,7 +359,7 @@ li {
   transition: color var(--trnsition-dur-and-func);
 }
 
-.link .header__link {
+.link.header__link {
   display: flex;
   color: var(--secondary-color);
   transition: color var(--trnsition-dur-and-func);
