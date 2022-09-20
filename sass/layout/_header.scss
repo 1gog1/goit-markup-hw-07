@@ -4,7 +4,7 @@
     background-color: var(--main-light-color);
 }
 
-.header-box {
+.page-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,7 +18,7 @@
     color: var(--main-color);
 }
 
-.header-web {
+.logo__link {
     font-size: 26px;
     line-height: 1.2;
     font-weight: 700;
@@ -37,19 +37,19 @@
     column-gap: 50px;
 }
 
-.menu-item {
+.menu__item {
     display: block
 }
 
 
-.header-link {
+.header-contact {
     display: flex;
     align-items: center;
     margin-left: auto;
     gap: 50px;
 }
 
-.list-header {
+.menu__link {
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -59,38 +59,17 @@
     line-height: 1.1;
     letter-spacing: 0.02em;
 }
-
-.link.list-header {
+ 
+.link.menu__link {
     position: relative;
     display: inline-block;
     transition: color var(--trnsition-dur-and-func);
 }
 
-.link.header-info {
+.link .header__link {
     display: flex;
     color: var(--secondary-color);
     transition: color var(--trnsition-dur-and-func);
-}
-
-.contact-icon {
-    margin-right: 10px;
-    justify-content: center;
-    align-items: center;
-    fill: currentColor;
-}
-
-.header-info {
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
-    color: var(--secondary-color);
-}
-
-.list-info {
-    display: block;
 }
 
 .link:hover,
@@ -101,17 +80,39 @@
     background-color: var(--main-light-color);
 }
 
-.current-studio {
-    color: var(--accent-color);
+.header__icon {
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    fill: currentColor;
 }
 
-.current-studio::after {
-    position: absolute;
-    content: "";
+.header__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    color: var(--secondary-color);
+}
+
+.header__list {
     display: block;
-    bottom: -1px;
-    width: 100%;
-    height: 4px;
-    background-color: var(--accent-color);
-    border-radius: 2px;
+}
+
+
+.current-studio {
+    color: var(--accent-color);
+
+    &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            bottom: -1px;
+            width: 100%;
+            height: 4px;
+            background-color: var(--accent-color);
+            border-radius: 2px;
+        }
 }

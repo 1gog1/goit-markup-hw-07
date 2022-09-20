@@ -16,13 +16,14 @@
     width: 170px;
     height: 92px;
     transition: color var(--trnsition-dur-and-func), border var(--trnsition-dur-and-func);
+
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+            border-color: var(--accent-color);
+        }
 }
 
-.client-list-link:hover,
-.client-list-link:focus {
-    color: var(--accent-color);
-    border-color: var(--accent-color);
-}
 
 .client-logo {
     fill: currentColor;

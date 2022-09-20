@@ -7,10 +7,10 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     transition: opacity 250ms ease, visibility 250ms ease;
-}
 
-.backdrop.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
+    &.is-hidden {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+    }
 }
