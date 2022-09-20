@@ -1,0 +1,117 @@
+.page-header {
+    border-bottom: 1px solid #ECECEC;
+
+    background-color: var(--main-light-color);
+}
+
+.header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-studio {
+    font-size: 26px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    color: var(--main-color);
+}
+
+.header-web {
+    font-size: 26px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    color: var(--accent-color);
+}
+
+.page-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.menu-item {
+    display: block
+}
+
+
+.header-link {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 50px;
+}
+
+.list-header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+}
+
+.link.list-header {
+    position: relative;
+    display: inline-block;
+    transition: color var(--trnsition-dur-and-func);
+}
+
+.link.header-info {
+    display: flex;
+    color: var(--secondary-color);
+    transition: color var(--trnsition-dur-and-func);
+}
+
+.contact-icon {
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    fill: currentColor;
+}
+
+.header-info {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    color: var(--secondary-color);
+}
+
+.list-info {
+    display: block;
+}
+
+.link:hover,
+.link:focus {
+    background-color: var(--accent-color);
+    color: var(--accent-color);
+
+    background-color: var(--main-light-color);
+}
+
+.current-studio {
+    color: var(--accent-color);
+}
+
+.current-studio::after {
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
